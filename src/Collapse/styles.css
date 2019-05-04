@@ -1,0 +1,29 @@
+/* .collapse {
+  height: auto;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+} */
+
+.Collapse {
+    overflow: hidden;
+    height: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    will-change: opacity, height;
+  }
+  
+  .Collapse--animating {
+    transition-property: opacity, height;
+    transition-duration: 5s;
+    transition-timing-function: ease-out;
+  }
+  
+  .Collapse--open {
+    opacity: 1;
+  }
+  
+  .Collapse--fully-open {
+    overflow: visible;
+  }
+  
